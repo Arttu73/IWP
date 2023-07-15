@@ -13,4 +13,6 @@ const myButton = document.getElementById("my-button");
 
 myButton.addEventListener("click", function() {
   console.log("hello world")
+  const text = document.getElementsByTagName(h1);
+  text.innerText = "My notebook";
 });
