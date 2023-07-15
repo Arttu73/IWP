@@ -23,7 +23,7 @@ myButton.addEventListener("click", function() {
 });
 
 addData.addEventListener("click", function(){
-  const unoList = document.getElementsByTagName("ul");
+  const unoList = document.getElementsByTagName("ul")[0];
   const listItem = document.createElement("li")
   /*listItem.innerText = "arbitrary text";*/
   listItem.innerText = document.getElementById("textarea").value;
