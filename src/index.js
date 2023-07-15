@@ -5,9 +5,8 @@ document.getElementById("app").innerHTML = `
 <main>
   <button id="my-button">My-button</button>
   <button id="add-data">Add-data</button>
-  <ul>
-  
-  </ul>
+  <ul></ul>
+  <textarea name="textarea" id="textarea" rows="10" cols="30" placeholder="Add text..."></textarea>
 
 </main>
 
@@ -26,6 +25,7 @@ myButton.addEventListener("click", function() {
 addData.addEventListener("click", function(){
   const unoList = document.getElementsByTagName("ul");
   const listItem = document.createElement("li")
-  listItem.innerText = "arbitrary text";
+  /*listItem.innerText = "arbitrary text";*/
+  listItem.innerText = textArea.getElementById("textarea").value;
   unoList.append(listItem);
 } );
