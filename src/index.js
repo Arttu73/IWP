@@ -27,5 +27,5 @@ addData.addEventListener("click", function(){
   const listItem = document.createElement("li")
   /*listItem.innerText = "arbitrary text";*/
   listItem.innerText = document.getElementById("textarea").value;
-  unoList.append(listItem);
+  unoList.appendChild(listItem);
 } );
